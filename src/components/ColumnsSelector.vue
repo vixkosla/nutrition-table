@@ -83,7 +83,10 @@ export default {
       } else if (!this.selectAll) {
         temp = true;
       }
-      this.columns.forEach(el => (el.visible = temp));
+      this.columns.forEach(el => {
+        el.visible = temp;
+        el.sort = false;
+      });
     },
     toogleProperty(index) {
       this.$parent.toogleProperty(index);
@@ -106,6 +109,8 @@ export default {
     padding: 3px 0 3px 20px;
     line-height: 24px;
     color: #5b5e77;
+    width: 137px;
+    // box-sizing: border-box;
 
     &_img {
       display: flex;
@@ -126,6 +131,7 @@ export default {
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 4px 0;
+    background-color: white;
 
     &::-webkit-scrollbar {
       width: 4px;

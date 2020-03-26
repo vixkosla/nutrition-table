@@ -39,7 +39,8 @@ export default {
 <style scoped lang="scss">
 .delete {
   // top: 500px;
-  // left: 500px;
+  // left: 50px;
+  transform: translateX(-50px);
   position: absolute;
   width: 96px;
   height: 254px;

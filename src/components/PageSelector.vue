@@ -89,6 +89,7 @@ export default {
   }
 
   &-bottom {
+    background-color: white;
     width: 35%;
     margin-top: 14px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16);
